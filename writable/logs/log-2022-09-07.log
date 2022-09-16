@@ -1,0 +1,89 @@
+ERROR - 2022-09-07 01:38:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:39:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:40:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:43:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:46:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:47:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:51:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:55:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 01:58:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:00:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:01:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:05:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:06:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:09:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:13:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:16:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:19:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:20:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:20:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:27:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:29:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:31:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:31:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:34:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:35:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:36:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-09-07 02:36:31 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(1371): CodeIgniter\Database\BaseConnection->listTables()
+#1 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(754): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#2 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(634): CodeIgniter\Database\MigrationRunner->ensureTable()
+#3 C:\xampp\htdocs\belajar\system\Commands\Database\MigrateStatus.php(111): CodeIgniter\Database\MigrationRunner->getHistory('')
+#4 C:\xampp\htdocs\belajar\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateStatus->run(Array)
+#5 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate:status', Array)
+#6 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate:status')
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\spark(63): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-09-07 02:38:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-09-07 02:38:11 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(1371): CodeIgniter\Database\BaseConnection->listTables()
+#1 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(754): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#2 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(634): CodeIgniter\Database\MigrationRunner->ensureTable()
+#3 C:\xampp\htdocs\belajar\system\Commands\Database\MigrateStatus.php(111): CodeIgniter\Database\MigrationRunner->getHistory('')
+#4 C:\xampp\htdocs\belajar\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateStatus->run(Array)
+#5 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate:status', Array)
+#6 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate:status')
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\spark(63): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-09-07 02:38:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:38:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:38:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:38:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-09-07 02:38:23 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(1371): CodeIgniter\Database\BaseConnection->listTables()
+#1 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(754): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#2 C:\xampp\htdocs\belajar\system\Database\MigrationRunner.php(634): CodeIgniter\Database\MigrationRunner->ensureTable()
+#3 C:\xampp\htdocs\belajar\system\Commands\Database\MigrateStatus.php(111): CodeIgniter\Database\MigrationRunner->getHistory('')
+#4 C:\xampp\htdocs\belajar\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateStatus->run(Array)
+#5 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate:status', Array)
+#6 C:\xampp\htdocs\belajar\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate:status')
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\spark(63): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-09-07 02:39:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:40:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:40:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:41:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 02:41:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:20:08 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-09-07 22:20:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:22:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:24:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:38:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:45:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:47:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:51:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:54:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-09-07 22:56:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
