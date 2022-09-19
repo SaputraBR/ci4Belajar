@@ -98,7 +98,7 @@
                         <a class="nav-link navbar-text" style="text-decoration: none;" href="/mata_pelajaran"><b>MATA PELAJARAN</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-text" style="text-decoration: none;" href="/ensiklopedia"><b>ENSIKLOPEDIA</b></a>
+                        <a class="nav-link navbar-text" style="text-decoration: none;" href="<?= base_url("/ensiklopedia") ?>"><b>ENSIKLOPEDIA</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navbar-text" style="text-decoration: none;" href="/lainnya"><b>LAINNYA</b></a>

@@ -48,8 +48,8 @@
                             <h6><?= $index['kategori']?></h6>
                             <h5 class="card-title h5 font-weight-bold"><a style="color: inherit; text-decoration: none;" href="/post/<?= $index['slug']?>"><?= substr($index['judul'], 0, 26)?></a></h5>
                             <p class="card-text"><?= substr ($index['content'], 0, 77)?></p>
+                            <p class="d-lg-block d-sm-none pb-0"><small class="text-muted"><?= $index['created_at']?></small></p>
                         </div>
-                        <p class="card-footer d-lg-block d-sm-none"><small class="text-muted"><?= $index['created_at']?></small></p>
                     </div>
                 </div>
 

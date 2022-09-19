@@ -11,7 +11,7 @@ class Home extends BaseController
     {
         $home = new AdminModel();
 
-        $data['belajar'] = $home->where('status', 'published')->findAll();
+        $data['belajar'] = $home->where(['status' => 'published', 'kategori !=' => 'ensiklopedia'])->findAll();
 
         echo view('index', $data);
     }
@@ -26,5 +26,14 @@ class Home extends BaseController
         ])->first();
 
         echo view('post', $data);
+    }
+
+    public function ensiklopedia()
+    {
+        $home = new AdminModel();
+
+        $data['belajar'] = $home->where(['status' => 'published', 'kategori =' => 'ensiklopedia'])->findAll();
+
+        echo view("ensiklopedia", $data);
     }
 }
