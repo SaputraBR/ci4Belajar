@@ -69,3 +69,36 @@ CRITICAL - 2022-09-19 03:10:42 --> Undefined variable: ensi
 #7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-09-19 22:31:50 --> Trying to get property 'items' of non-object
+#0 C:\xampp\htdocs\belajar\app\Views\ensiklopedia.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('ensiklopedia', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('ensiklopedia', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->ensiklopedia()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-19 22:32:26 --> Undefined property: CodeIgniter\View\View::$items
+#0 C:\xampp\htdocs\belajar\app\Views\ensiklopedia.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('ensiklopedia', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('ensiklopedia', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->ensiklopedia()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-19 22:33:56 --> Trying to get property 'items' of non-object
+#0 C:\xampp\htdocs\belajar\app\Views\ensiklopedia.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('ensiklopedia', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('ensiklopedia', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->ensiklopedia()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -28,40 +28,26 @@
                     <h4 class="text-left mb-4 ml-4"><b>Perbaharui otakmu yang dangkal itu dengan ensiklopedia</b></h4>
                     <div class="col-sm-12 col-lg-9">
                         <div class="d-md-flex">
-                            <div class="col-sm-12 col-md-6 mb-4">
-                                <div class="p-4 text-white position-absolute text-left" style="bottom: 0;">
-                                    <h6 >
-                                        <a href="#" style="color: inherit;"><b>Pujangga Alam</b></a>
-                                    </h6>
-                                    <h3 class="font-weight-bold" style="font-size: 30px;">
-                                        <a href="/post/" style="color: inherit;">Kenangan dalam gelombang</a> 
-                                    </h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
-                                        <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                                    </svg>
-                                    <small><a href="post.php" style="color: inherit;">Baca . . .</a></small>    
+                        <?php foreach (array_slice($belajar, 0, 2) as $ensi) :?>
+                                <div class="col-sm-12 col-md-6 mb-4">
+                                    <div class="p-4 text-white position-absolute text-left" style="bottom: 0;">
+                                        <h6 >
+                                            <a href="#" style="color: inherit;"><b><?php echo ($ensi['kategori'])?></b></a>
+                                        </h6>
+                                        <h3 class="font-weight-bold" style="font-size: 30px;">
+                                            <a href="/post/<?= $ensi['slug']?>" style="color: inherit;"><?php echo ($ensi['judul'])?></a> 
+                                        </h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+                                            <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                        </svg>
+                                        <small><a href="/post/<?= $ensi['slug']?>" style="color: inherit;">Baca . . .</a></small>    
+                                    </div>
+                                    <img src="<?php echo base_url('img/'.$ensi['gambar'])?>" alt="" width="100%" height="100%">
                                 </div>
-                                <img src="img/How To Pray Powerful Prayers (Part 2_3).jpg" alt="" width="100%" height="100%">
-                            </div>
-        
-                            <div class="col-sm-12 col-md-6 mb-4">
-                                <div class="p-4 text-white position-absolute text-left" style="bottom: 0;">
-                                    <h6 >
-                                        <a href="#" style="color: inherit;"><b>Pujangga Alam</b></a>
-                                    </h6>
-                                    <h3 class="font-weight-bold" style="font-size: 30px;">
-                                        <a href="post.php" style="color: inherit;">Kenangan dalam gelombang</a> 
-                                    </h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
-                                        <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                                    </svg>
-                                    <small><a href="post.php" style="color: inherit;">Baca . . .</a></small>    
-                                </div>
-                                <img src="img/How To Pray Powerful Prayers (Part 2_3).jpg" alt="" width="100%" height="100%">  
-                            </div>
+                        <?php endforeach ?>
                         </div>
 
-                        <?php foreach ($belajar as $ensi) : ?>
+                        <?php foreach (array_slice($belajar, 2, 10) as $ensi) : ?>
                         <div class="mx-2 my-4"> 
                             <div class="card mb-3">
                                 <div class="row no-gutters">
@@ -75,8 +61,8 @@
                                         <h4>
                                             <a href="/post/<?= $ensi['slug']?>" style="color: inherit;"><b><?php echo ($ensi['judul'])?></b></a>
                                         </h4>
-                                        <p><?php echo substr($ensi['content'], 0, 100)?></p>
-                                        <small class="text-muted"><?php echo ($ensi['created_at'])?></small>
+                                        <p><?php echo substr($ensi['content'], 0, 250)?>. . .</p>
+                                        <small class="text-muted"><?php echo substr($ensi['created_at'], 0, 10)?></small>
                                     </div>
                                 </div>
                             </div> 
