@@ -38,12 +38,14 @@ $routes->get('/post/(:any)', 'Home::post/$1');
     $routes->get('/cms/(:segment)/delete', 'Admin::delete/$1');
     $routes->add('/cms/(:segment)/edit', 'Admin::edit/$1');
     $routes->add('/cms/new', 'Admin::create');
-$routes->get('/mata_pelajaran', 'Page::mata_pelajaran');
 $routes->get('/ensiklopedia', 'Home::ensiklopedia');
 $routes->get('/lainnya', 'Page::lainnya');
+$routes->get('/contact', 'Page::contact');
 $routes->get('/about', 'Page::about');
 $routes->get('/credit', 'Page::credit');
 $routes->get('/faqs', 'Page::faqs');
+$routes->get('/search', 'Page::search');
+$routes->get('/register', 'Page::register');
 
 /*
  * --------------------------------------------------------------------

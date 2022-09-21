@@ -81,21 +81,13 @@
                 <img src="img/iconWhite.png" alt="" width="40" height="40" id="iconWhite" hidden />
             </a>
             <div class="ml-auto order-1">
-                <div class="d-inline-block">
-                    <form action="" method="" id="formBox">
-                        <div class="input-group" style="max-width: 40vw">
-                            <input class="form-control" type="search" placeholder="masukan kata" />
-                            <div class="input-group-append">
-                                <button class="btn bg-white" style="border: 1px solid #ced4da" type="button">
-                                    <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <a href="/search" style="text-decoration: none;">
+                        <button class="navbar-toggler btn btn-light border-0 p-2 rounded-circle d-inline-flex align-items-center justify-content-center" title="cari">
+                            <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </a>
                 <button
                     class="navbar-toggler btn btn-light border-0 p-1 rounded-circle d-inline-flex align-items-center justify-content-center"
                     title="mode gelap" id="moonToggle" onclick="darkMode(true)">
@@ -124,13 +116,13 @@
                     <a class="nav-link navbar-text" style="text-decoration: none" href="/home"><b>HOME</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-text" style="text-decoration: none" href="/mata_pelajaran"><b>MATA PELAJARAN</b></a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link navbar-text" style="text-decoration: none" href="/ensiklopedia"><b>ENSIKLOPEDIA</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbar-text" style="text-decoration: none" href="/lainnya"><b>LAINNYA</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text" style="text-decoration: none" href="/contact"><b>CONTACT</b></a>
                 </li>
             </ul>
         </div>
@@ -157,33 +149,19 @@
                     <img src="img/iconWhite.png" alt="" width="50" height="50" id="iconWhite"/>
                 </a>
 
-                <div class="ml-auto order-1">
-                    <div style="display: inline-block; padding-top: 8vh;">
-                        <form class="" action="" method="" id="formBox">
-                            <div class="input-group" style="max-width: 40vw">
-                                <input class="form-control" type="search" placeholder="masukan kata" />
-                                <div class="input-group-append">
-                                    <button class="btn bg-white" style="border: 1px solid #ced4da" type="button">
-                                        <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
                 <ul class="navbar-nav mr-auto d-lg-flex" style="text-decoration: none; list-style-type: none; padding-top: 8vh; flex-direction: row;" id="">
                     <li class="nav-item px-2">
                         <a class="nav-link" style="text-decoration: none; color: #fff;" href="/home"><b>HOME</b></a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" style="text-decoration: none; color: #fff;" href="/mata_pelajaran"><b>MATA PELAJARAN</b></a>
-                    </li>
-                    <li class="nav-item px-2">
                         <a class="nav-link" style="text-decoration: none; color: #fff;" href="/ensiklopedia"><b>ENSIKLOPEDIA</b></a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" style="text-decoration: none; color: #fff;" href="/lainnya"><b>LAINNYA</b></a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" style="text-decoration: none; color: #fff;" href="/contact"><b>CONTACT</b></a>
                     </li>
                 </ul>
             </div>

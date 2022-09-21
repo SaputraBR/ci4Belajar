@@ -14,6 +14,7 @@
                     <a class="nav-link" id="navbarMenu" href="/mata_pelajaran">MATA PELAJARAN</a>
                     <a class="nav-link" id="navbarMenu" href="/ensiklopedia">ENSIKLOPEDIA</a>
                     <a class="nav-link" id="navbarMenu" href="/lainnya">LAINNYA</a>
+                    <a class="nav-link" id="navbarMenu" href="/contact">CONTACT</a>
                     <hr>
                     <a class="nav-link mt-4" id="navbarMenu" href="/about">ABOUT</a>
                     <a class="nav-link" id="navbarMenu" href="/credit">CREDIT</a>
@@ -58,20 +59,13 @@
                     <img src="/img/iconWhite.png" alt="" width="40" height="40" id="iconWhite" hidden>
                 </a>
                 <div class="ml-auto order-1">
-                    <div class="d-inline-block">
-                        <form action="" method="" id="formBox">
-                            <div class="input-group" style="max-width: 40vw;">
-                                <input class="form-control" type="search" placeholder="masukan kata">
-                                <div class="input-group-append">
-                                    <button class="btn bg-white" style=" border: 1px solid #ced4da;" type="button">
-                                        <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                        </svg> 
-                                    </button> 
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <a href="/search" style="text-decoration: none;">
+                        <button class="navbar-toggler btn btn-light border-0 p-2 rounded-circle d-inline-flex align-items-center justify-content-center" title="cari">
+                            <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </a>
                     <button class="navbar-toggler btn btn-light border-0 p-1 rounded-circle d-inline-flex align-items-center justify-content-center" title="mode gelap" id="moonToggle" onclick="darkMode(true)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
                             <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
@@ -101,7 +95,7 @@
                         <a class="nav-link navbar-text" style="text-decoration: none;" href="/lainnya"><b>LAINNYA</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-text" style="text-decoration: none;" href="#"><b>CONTACT</b></a>
+                        <a class="nav-link navbar-text" style="text-decoration: none;" href="/contact"><b>CONTACT</b></a>
                     </li>
                 </ul>
             </div>

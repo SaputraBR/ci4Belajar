@@ -9,9 +9,9 @@ class Page extends BaseController
         return view('mata_pelajaran');
     }
 
-    public function ensiklopedia()
+    public function contact()
     {
-        return view('ensiklopedia');
+        return view('contact');
     }
 
     public function lainnya()
@@ -37,6 +37,16 @@ class Page extends BaseController
     public function post()
     {
         echo view('post');
+    }
+
+    public function search()
+    {
+        return view('search');
+    }
+
+    public function register()
+    {
+        return view('register');
     }
 
 }

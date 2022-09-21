@@ -61,7 +61,7 @@
                                         <h4>
                                             <a href="/post/<?= $ensi['slug']?>" style="color: inherit;"><b><?php echo ($ensi['judul'])?></b></a>
                                         </h4>
-                                        <p><?php echo substr($ensi['content'], 0, 250)?>. . .</p>
+                                        <p><?php echo substr($ensi['content'], 0, 150)?>. . .</p>
                                         <small class="text-muted"><?php echo substr($ensi['created_at'], 0, 10)?></small>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                         <?php endforeach ?>
                     </div>
 
-                    <aside class="col-sm-12 col-lg-3 mb-5">
+                    <aside class="col-sm-12 col-lg-3 mb-4">
                         <div class="card rounded-lg shadow sticky-top" style="top: 12vh; z-index: 0;">
                             <div class="card-body">
                                 <h5 class="h5">Billboard</h5>
