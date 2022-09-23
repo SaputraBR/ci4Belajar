@@ -9,10 +9,12 @@
                     </div>
                     <div class="navbar-nav">
                         <div class="nav-item">
-                        <a class="" href="/register">
+                            <a class="nav-link navbar-text" href="<?php echo base_url('cms/register')?>">
                                 <button type="button" class="btn btn-light">Register</button>
                             </a>
-                            <a class="" href="admin_logout.php">
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link navbar-text" href="<?php echo base_url('/logout')?>">
                                 <button type="button" class="btn btn-danger">Logout</button>
                             </a>
                         </div>

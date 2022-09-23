@@ -1,0 +1,35 @@
+CRITICAL - 2022-09-23 01:39:05 --> Undefined index: username
+#0 C:\xampp\htdocs\belajar\app\Controllers\Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-23 01:49:26 --> Use of undefined constant PASSWORD_BCRYPT0 - assumed 'PASSWORD_BCRYPT0' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\belajar\app\Controllers\Login.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 60, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Login->register()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-23 01:50:01 --> Call to undefined function App\Controllers\session_set()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Login->auth()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-23 02:18:35 --> Class 'Config\app\Filters\AdminLoginFilters' not found
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-09-23 02:21:07 --> Class 'app\Filters\AdminLoginFilters' not found
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-09-23 02:21:22 --> Class 'Config\AdminLoginFilters' not found
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}

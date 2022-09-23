@@ -33,11 +33,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/post/(:any)', 'Home::post/$1');
-    $routes->get('/cms', 'Admin::admin');
+    $routes->get('/cms', 'Admin::admin', ['filter' => 'adminLog']);
     $routes->get('/cms/(:segment)/preview', 'Admin::preview/$1');
     $routes->get('/cms/(:segment)/delete', 'Admin::delete/$1');
     $routes->add('/cms/(:segment)/edit', 'Admin::edit/$1');
     $routes->add('/cms/new', 'Admin::create');
+    $routes->add('/cms/register', 'Login::register');
 $routes->get('/ensiklopedia', 'Home::ensiklopedia');
 $routes->get('/lainnya', 'Page::lainnya');
 $routes->get('/contact', 'Page::contact');
@@ -45,7 +46,10 @@ $routes->get('/about', 'Page::about');
 $routes->get('/credit', 'Page::credit');
 $routes->get('/faqs', 'Page::faqs');
 $routes->get('/search', 'Page::search');
-$routes->get('/register', 'Page::register');
+$routes->get('/logout', 'login::logout');
+$routes->get('/login', 'Login::index');
+$routes->add('/login/auth', 'Login::auth');
+
 
 /*
  * --------------------------------------------------------------------

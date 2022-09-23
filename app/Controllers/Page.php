@@ -4,10 +4,6 @@ namespace App\Controllers;
 
 class Page extends BaseController
 {
-    public function mata_pelajaran()
-    {
-        return view('mata_pelajaran');
-    }
 
     public function contact()
     {
@@ -34,20 +30,12 @@ class Page extends BaseController
         return view('faqs');
     }
     
-    public function post()
-    {
-        echo view('post');
-    }
 
     public function search()
     {
         return view('search');
     }
 
-    public function register()
-    {
-        return view('register');
-    }
 
 }
 

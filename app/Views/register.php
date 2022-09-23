@@ -19,27 +19,60 @@
         </nav>
 
         <section class="container shadow-lg col-575 col-sm-8 col-md-6 mt-5 mb-5 bg-light">
-            <form class="p-md-5 p-sm-5 p-4">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="username">
-                    <div id="username" class="form-text">Masukkan user yang akan didaftarkan</div>
+            <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+                <div class="alert alert-success">
+                    <?php echo session()->getFlashdata('berhasil');?>
                 </div>
-                <div class="mb-3">
+            <?php } ?>
+            <form method="post" enctype="multipart/form-data" class="p-md-5 p-sm-5 p-4">
+                <h3>Register Form</h3>
+                <p><small>Isikan data user yang akan didaftarkan</small></p>
+                <hr/>
+                <div class="mb-3 form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" aria-describedby="username" required>
+                    <div id="username" class="form-text"><i>*Minimal 4 karakter</i></div>
+                </div>
+                <div class="mb-3 form-group">
                     <label for="password" class="form-label">Password</label>
                     <div class="input-group-append">
-                        <input type="password" class="form-control" id="password">
-                        <button class="input-group-text">
-                            <i class="bi bi-eye-slash-fill" id="togglePassword"></i>
-                            <i class="bi bi-eye-fill" id="togglePassword" hidden></i>
+                        <input type="password" class="form-control" name="password" id="password" required>
+                        <button type="button" class="input-group-text" id="eyefill" onclick="show()" >
+                            <i class="bi bi-eye-slash-fill"></i>
+                        </button>
+                        <button type="button" class="input-group-text" id="eye" onclick="show()" hidden> 
+                            <i class="bi bi-eye-fill"></i>
                         </button>
                     </div>
+                    <div id="password" class="form-text"><i>*Minimal 4 karakter</i></div>
                 </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                
             </form>
         </section>
     
     </body>
+    <script>
+
+        function show(){
+            var show = document.getElementById('eyefill');
+            var hide = document.getElementById('eye');
+            var pass = document.getElementById('password');
+
+            if(pass.type === 'password'){
+                pass.type = 'text';
+                hide.hidden = false;
+                show.hidden = true;
+            } else {
+                pass.type = 'password'
+                hide.hidden = true;
+                show.hidden = false;
+            }
+        }
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
