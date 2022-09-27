@@ -45,7 +45,7 @@ $routes->get('/contact', 'Page::contact');
 $routes->get('/about', 'Page::about');
 $routes->get('/credit', 'Page::credit');
 $routes->get('/faqs', 'Page::faqs');
-$routes->get('/search', 'Page::search');
+$routes->get('/search', 'Home::search');
 $routes->get('/logout', 'login::logout');
 $routes->get('/login', 'Login::index');
 $routes->add('/login/auth', 'Login::auth');

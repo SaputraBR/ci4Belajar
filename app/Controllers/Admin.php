@@ -10,7 +10,9 @@ class Admin extends BaseController
     public function admin()
     {
         $admin = new AdminModel();
-        $data['admin'] = $admin->findAll();
+        $data['admin']   = $admin->paginate(5, 'pagin');                   
+        $data['pager']   = $admin->pager;
+        $data['page']    = $this->request->getPost('page') ? $this->request->getPost('page') : 1;
         echo view('admin_post', $data);
     }   
 

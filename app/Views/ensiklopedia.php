@@ -68,6 +68,7 @@
                             </div> 
                         </div>
                         <?php endforeach ?>
+                        <?php echo $pager->links('pagin', 'pagination') ?>
                     </div>
 
                     <aside class="col-sm-12 col-lg-3 mb-4">

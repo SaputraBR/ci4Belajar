@@ -54,6 +54,7 @@
                 </div>
 
                 <?php endforeach ?>
+                <?php echo $pager->links('pagin', 'pagination') ?>
             </div>
 
                 <!--function custom.js & custom.css-->

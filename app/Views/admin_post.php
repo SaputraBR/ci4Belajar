@@ -16,7 +16,7 @@
                     <?php echo session()->getFlashdata('berhasil');?>
                 </div>
             <?php } ?>
-        <div class="container">
+        <div class="container mb-5">
             <table class="table my-5" style="border: solid; border-color: gray;">
                 <thead>
                     <tr>
@@ -58,6 +58,7 @@
                 <?php endforeach ?>
                 </tbody>
             </table>
+            <?php echo $pager->links('pagin', 'pagination') ?>
 
             <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">

@@ -16,9 +16,9 @@
 
         <article class="container shadow-lg col-575 col-sm-10 col-md-8 mt-5 mb-5" style="background-color: #fff; min-height: 60vh">
             <div class="d-inline-block mt-5 px-5" style="width: 100%;">
-                <form action="" method="" id="formBox">
+                <form action="" method="GET" class="form-group">
                     <div class="input-group">
-                        <input class="form-control shadow mr-3" type="search" placeholder="masukan kata kunci">
+                        <input class="form-control shadow mr-3" type="search" name="search" placeholder="masukan kata kunci">
                             
                         <button class="btn shadow" style="background: #37e8ff ;" type="submit">
                             <svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -30,18 +30,15 @@
             </div>
 
             <section class="container my-5 pb-5 px-5">
-                <div class="mb-3 border-bottom">
-                    <h4><a href="post.html" style="color: inherit;"><b>lorem ipsum dolor sit amet consectetur</b></a></h4>
-                    <p>qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore....</p>
-                </div>
-                <div class="mb-3 border-bottom">
-                    <h4><a href="post.html" style="color: inherit;"><b>lorem ipsum dolor sit amet consectetur</b></a></h4>
-                    <p>qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore....</p>
-                </div>
-                <div class="mb-3 border-bottom">
-                    <h4><a href="post.html" style="color: inherit;"><b>lorem ipsum dolor sit amet consectetur</b></a></h4>
-                    <p>qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore....</p>
-                </div>
+                <?php foreach($belajar as $belajar) :?>
+                        <div class="mb-3 border-bottom">
+                            <h4><a href="/post/<?= $belajar['slug']?>" style="color: inherit;"> 
+                                <b><?= substr($belajar['judul'], 0, 15)?></b>
+                            </a></h4>
+                            <p><?= substr($belajar['content'], 0, 40)?></p>
+                        </div>
+                <?php endforeach; ?>
+                <?php echo $pager->links('pagin', 'pagination') ?>
             </section>
         </article>
 
@@ -88,7 +85,8 @@
                 </div>
             </div>
         </footer>
-    
+        
+
         <script type="text/javascript" src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
