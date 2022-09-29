@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -40,8 +40,7 @@
                         <div class="card-body p-sm-2 p-md-4">
                             <div class="p-4 p-sm-4 p-md-5">
                                 <header class="d-inline-flex text-center mb-4">
-                                    <small class="mr-2"><?= $belajar['author'] ?></small>
-                                    <small><?= $belajar['created_at'] ?></small>
+                                    <small class="mr-2"><?= $belajar['author'] ?> · <?= substr($belajar['created_at'], 0, 10) ?></small>
                                 </header>
                                 <h1 class="h1 font-weight-bold mb-3"><?= $belajar['judul'] ?></h1>
                                 <div class="d-inline-flex mb-4">
@@ -53,7 +52,7 @@
                                         <source media="(min-width: 768px)" srcset="<?= base_url('img/'.$belajar['gambar'])?>" type="image/png" width="100%">
                                         <source media="(min-width: 576px)" srcset="<?= base_url('img/'.$belajar['gambar'])?>" type="image/png" width="100%">
                                         <source media="(max-width: 575px)" srcset="<?= base_url('img/'.$belajar['gambar'])?>" type="image/png" width="100%">
-                                        <img class="mb-4" src="img/fullBackground.png" width="" height="" alt="">
+                                        <img class="mb-4" src="<?= base_url('img/'.$belajar['gambar'])?>" width="" height="" alt="">
                                     </picture>
                                     <div class="">
                                         <?= $belajar['content'] ?>
@@ -63,7 +62,7 @@
                         </div>
                     </article>
 
-                    <div class="card rounded-lg shadow mt-5 mb-5" id="komentar">
+                    <section class="card rounded-lg shadow mt-5" id="komentar">
                         <div class="card-body">
                             <div class="mb-4">
                                 <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
@@ -80,14 +79,40 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Message</label>
-                                    <textarea name="message" class="form-control form-control2" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
                                 </div>                             
                                 <div class="form-group">
                                     <input type="submit" value="Kirim" class="btn btn-primary w-100">
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </section>
+
+                    <section class="container rounded-lg shadow p-4 mt-3 mb-5 bg-white" id="komentar">
+                        <div class="col-lg-12 pt-2 bg-komentar">
+                            <p class="border-bottom">Osama Bin Laden · <small class="">2022-09-22</small></p>
+                            <p class="ml-2">Asssalamualaikum</p>
+                            <p class="ml-2 pb-2">Balas</p>
+                        </div>
+
+                        <div class="pt-2 bg-komentar" style="margin-left: 50px; padding-right: 15px; padding-left: 15px;">
+                            <p class="border-bottom">Saddam Husein · <small class="">2022-09-22</small></p>
+                            <p class="ml-2">Waalaikumsalam ya akhi, Kayfa Haluk?</p>
+                            <p class="ml-2 pb-2">Balas</p>
+                        </div>
+
+                        <div class="pt-2 bg-komentar" style="margin-left: 100px; padding-right: 15px; padding-left: 15px;">
+                            <p class="border-bottom">Barack Obama · <small class="">2022-09-22</small></p>
+                            <p class="ml-2">I think he is fine</p>
+                            <p class="ml-2 pb-2">Balas</p>
+                        </div>
+
+                        <div class="col-lg-12 pt-2 bg-komentar">      
+                            <p class="border-bottom">Muammar Gaddafi · <small class="">2022-09-23</small></p>
+                            <p class="ml-2">Yaa Salaam..</p>
+                            <p class="ml-2 pb-2">Balas</p>
+                        </div>
+                    </section>
                 </div>
                 
                 <aside class="col-sm-12 col-lg-4 mb-5">

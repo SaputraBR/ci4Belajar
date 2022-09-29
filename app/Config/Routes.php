@@ -33,12 +33,16 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/post/(:any)', 'Home::post/$1');
-    $routes->get('/cms', 'Admin::admin', ['filter' => 'adminLog']);
+$routes->group('', ['filter' => 'adminLog'], static function($routes){
+    $routes->get('/cms', 'Admin::admin',);
     $routes->get('/cms/(:segment)/preview', 'Admin::preview/$1');
     $routes->get('/cms/(:segment)/delete', 'Admin::delete/$1');
     $routes->add('/cms/(:segment)/edit', 'Admin::edit/$1');
-    $routes->add('/cms/new', 'Admin::create');
+    $routes->add('/cms/new', 'Admin::create',);
+    $routes->get('/cms/message', 'Admin::message',);
+    $routes->get('/cms/message/detail', 'Admin::detail',);
     $routes->add('/cms/register', 'Login::register');
+});
 $routes->get('/ensiklopedia', 'Home::ensiklopedia');
 $routes->get('/lainnya', 'Page::lainnya');
 $routes->get('/contact', 'Page::contact');

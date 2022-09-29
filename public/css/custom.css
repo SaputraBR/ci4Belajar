@@ -66,6 +66,10 @@
     background: #3d3d3d;   
 }
 
+.bg-komentar{
+    background: rgb(235, 235, 235);
+}
+
 .bg-sky {
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -125,7 +129,7 @@
 }
 
 .dark-mode #chat:hover, .dark-mode #close:hover,
-.dark-mode #biUp:hover,
+.dark-mode #ngeroll:hover,
 .dark-mode #sekrol:hover {
     color: rgb(204, 203, 203) !important;
 }
@@ -133,11 +137,12 @@
 .dark-mode #chat,
 .dark-mode #facebookSidenav,
 .dark-mode #instagramSidenav,
+.dark-mode #ngeroll,
 .dark-mode #sekrol,
 .dark-mode #twitterSidenav,
 .dark-mode #youtubeSidenav,
 .dark-mode #telegramSidenav  {
-    color: #fff;
+    color: #fff !important;
 }
 
 .dark-mode #facebookSidenav:hover {
@@ -174,12 +179,16 @@
     border-radius: 50%;
 }
 
-
+.dark-mode #komentar,
 .dark-mode .bg-footer,
 .dark-mode .bg-sky,
 .dark-mode .card,
 .dark-mode article{
     background: #3f4c57 !important;
+}
+
+.dark-mode .bg-komentar{
+    background: rgba(132, 132, 130, .4);
 }
 
 .dark-mode .btn-light:hover {

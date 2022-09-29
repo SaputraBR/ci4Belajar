@@ -58,7 +58,7 @@
                 <?php endforeach ?>
                 </tbody>
             </table>
-            <?php echo $pager->links('pagin', 'pagination') ?>
+            <?php echo $pager->links('paginate', 'pagination') ?>
 
             <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">

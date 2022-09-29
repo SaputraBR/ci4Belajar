@@ -10,7 +10,7 @@ class Admin extends BaseController
     public function admin()
     {
         $admin = new AdminModel();
-        $data['admin']   = $admin->paginate(5, 'pagin');                   
+        $data['admin']   = $admin->paginate(5, 'paginate');                   
         $data['pager']   = $admin->pager;
         $data['page']    = $this->request->getPost('page') ? $this->request->getPost('page') : 1;
         echo view('admin_post', $data);
@@ -96,5 +96,15 @@ class Admin extends BaseController
         }
         $admin->delete($id);
         return redirect()->to('../cms')->with("berhasil","Data berhasil dihapus");
+    }
+
+    public function message()
+    {
+        echo view('admin_msg');
+    }
+
+    public function detail()
+    {
+        echo view('message_detail');
     }
 }

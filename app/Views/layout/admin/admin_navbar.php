@@ -6,6 +6,9 @@
                         <div class="nav-item">
                             <a class="nav-link navbar-text" href="<?php echo base_url('cms/new')?>">New Post</a>
                         </div>
+                        <div class="nav-item">
+                            <a class="nav-link navbar-text" href="<?php echo base_url('cms/message')?>">Message</a>
+                        </div>
                     </div>
                     <div class="navbar-nav">
                         <div class="nav-item">

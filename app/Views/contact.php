@@ -22,6 +22,10 @@
                 </header>
 
                 <form action="" class="form">
+                <div class="form-group" hidden>
+                        <label for="nama">Type</label>
+                        <input type="text" value="pesan_user" class="form-control form-control2">
+                    </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control form-control2">
