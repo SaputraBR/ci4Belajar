@@ -21,22 +21,46 @@
                         <th>Action</th>
                     </tr>
                 </thead>
+                <?php foreach($user as $d) : ?>
                 <tbody>
-                    <td>1</td>
+                    <td><?= $d['id'] ?></td>
                     <td>
-                        <b>Sukardi</b><br>
-                        <small>sukardi69@gmail.com</small>
+                        <b><?= $d['nama'] ?></b><br>
+                        <small><?= $d['email'] ?></small>
                     </td>
-                    <td>Lorem Ipsum Dolor Sit Amet</td>
-                    <td>2022-09-22</td>
+                    <td><?= substr($d['message'], 0, 30) ?></td>
+                    <td><?= $d['dibuat'] ?></td>
                     <td>
-                    <a href="<?= base_url('/cms/message/detail')?>"><button class="btn btn-sm btn-outline-secondary">Detail</button></a>
-                    <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    <a href="<?= base_url('/cms/'.$d['id'].'/detail')?>"><button class="btn btn-sm btn-outline-secondary">Detail</button></a>
+                    <button href="#" data-href="<?= base_url('cms/'.$d['id'].'/hapus')?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</button>
                     </td>
                 </tbody>
+                <?php endforeach; ?>
             </table>
         </section>
+        <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h2">Beneran mau dihapus?</h2>
+                        <p>Datanya akan hilang permanen!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" role="button" id="delete-button" class="btn btn-danger">Delete</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
+    <script>
+            function confirmToDelete(el){
+                $("#delete-button").attr("href", el.dataset.href);
+                $("#confirm-dialog").modal('show');
+            }
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

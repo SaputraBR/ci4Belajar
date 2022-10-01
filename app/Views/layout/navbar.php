@@ -11,7 +11,6 @@
 
                 <nav class="p-3 position-fixed" style="min-width: 60%;">
                     <a class="nav-link" id="navbarMenu" href="/">HOME</a>
-                    <a class="nav-link" id="navbarMenu" href="/mata_pelajaran">MATA PELAJARAN</a>
                     <a class="nav-link" id="navbarMenu" href="/ensiklopedia">ENSIKLOPEDIA</a>
                     <a class="nav-link" id="navbarMenu" href="/lainnya">LAINNYA</a>
                     <a class="nav-link" id="navbarMenu" href="/contact">CONTACT</a>
@@ -95,7 +94,7 @@
                         <a class="nav-link navbar-text" style="text-decoration: none;" href="/lainnya"><b>LAINNYA</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-text" style="text-decoration: none;" href="/contact"><b>CONTACT</b></a>
+                        <a class="nav-link navbar-text" style="text-decoration: none;" href="<?= base_url("/contact") ?>"><b>CONTACT</b></a>
                     </li>
                 </ul>
             </div>

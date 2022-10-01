@@ -98,13 +98,4 @@ class Admin extends BaseController
         return redirect()->to('../cms')->with("berhasil","Data berhasil dihapus");
     }
 
-    public function message()
-    {
-        echo view('admin_msg');
-    }
-
-    public function detail()
-    {
-        echo view('message_detail');
-    }
 }

@@ -69,17 +69,21 @@
                                 <small>Berikan pendapat atau masukan anda untuk artikel ini</small>    
                             </div>
                             <form action="" class="form">
+                                <div class="form-group" hidden>
+                                    <label for="tipe">Tipe</label>
+                                    <input type="text" id="tipe" name="tipe" value="komentar" class="form-control form-control2">
+                                </div>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="nama" class="form-control form-control2">
+                                    <input type="text" id="nama" name="nama" class="form-control form-control2">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control form-control2">
+                                    <input type="email" id="email" name="email" class="form-control form-control2">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Message</label>
-                                    <textarea name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
                                 </div>                             
                                 <div class="form-group">
                                     <input type="submit" value="Kirim" class="btn btn-primary w-100">
@@ -90,25 +94,25 @@
 
                     <section class="container rounded-lg shadow p-4 mt-3 mb-5 bg-white" id="komentar">
                         <div class="col-lg-12 pt-2 bg-komentar">
-                            <p class="border-bottom">Osama Bin Laden · <small class="">2022-09-22</small></p>
+                            <p class="border-bottom">Osama Bin Laden(<small><i>Laden69@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
                             <p class="ml-2">Asssalamualaikum</p>
                             <p class="ml-2 pb-2">Balas</p>
                         </div>
 
                         <div class="pt-2 bg-komentar" style="margin-left: 50px; padding-right: 15px; padding-left: 15px;">
-                            <p class="border-bottom">Saddam Husein · <small class="">2022-09-22</small></p>
+                            <p class="border-bottom">Saddam Husein(<small><i>sadHusein47@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
                             <p class="ml-2">Waalaikumsalam ya akhi, Kayfa Haluk?</p>
                             <p class="ml-2 pb-2">Balas</p>
                         </div>
 
                         <div class="pt-2 bg-komentar" style="margin-left: 100px; padding-right: 15px; padding-left: 15px;">
-                            <p class="border-bottom">Barack Obama · <small class="">2022-09-22</small></p>
+                            <p class="border-bottom">Barack Obama(<small><i>AlobamaHoHo@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
                             <p class="ml-2">I think he is fine</p>
                             <p class="ml-2 pb-2">Balas</p>
                         </div>
 
                         <div class="col-lg-12 pt-2 bg-komentar">      
-                            <p class="border-bottom">Muammar Gaddafi · <small class="">2022-09-23</small></p>
+                            <p class="border-bottom">Muammar Gaddafi(<small><i>LoveLiby4ever@yahoo.co.id</i></small>) <small class="float-right">2022-09-23</small></p>
                             <p class="ml-2">Yaa Salaam..</p>
                             <p class="ml-2 pb-2">Balas</p>
                         </div>

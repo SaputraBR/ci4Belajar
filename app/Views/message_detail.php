@@ -8,15 +8,15 @@
     <?php echo $this->include('layout/admin/admin_navbar') ?>
 
     <body style="background: #8C8C8C">
-        <section class="container col-lg-8 col-sm-8 mt-5 p-5 card shadow" >
+        <section class="container col-10 col-lg-8 col-sm-8 mt-5 p-5 card shadow" >
             <h3>Pesan Masuk</h3>
             <small>Seseorang telah mengirimkan pesan!</small>
             <br>
-            <p>Nama     : </p>
-            <p>Email    : </p>
-            <p>No. Telp : </p>
-            <p>Pesan    :</p>
-            <textarea name="pesan" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
+            <pre>Nama     : <?= $user['nama'] ?></pre>
+            <pre>Email    : <?= $user['email'] ?></pre>
+            <pre>No. Telp : <?= $user['no_telepon'] ?></pre>
+            <pre>Pesan    : </pre>
+            <textarea name="pesan" class="form-control form-control2" id="" cols="30" rows="6"><?= $user['message'] ?></textarea>
         </section>
     </body>
 

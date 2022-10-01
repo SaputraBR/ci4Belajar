@@ -5,11 +5,6 @@ namespace App\Controllers;
 class Page extends BaseController
 {
 
-    public function contact()
-    {
-        return view('contact');
-    }
-
     public function lainnya()
     {
         return view('lainnya');
@@ -30,11 +25,6 @@ class Page extends BaseController
         return view('faqs');
     }
     
-
-    public function search()
-    {
-        return view('search');
-    }
 
 
 }

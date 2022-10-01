@@ -64,8 +64,8 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                     <div class="modal-body">
-                        <h2 class="h2">Are you sure?</h2>
-                        <p>The data will be deleted and lost forever</p>
+                        <h2 class="h2">Beneran mau dihapus?</h2>
+                        <p>Datanya akan hilang permanen!</p>
                     </div>
                     <div class="modal-footer">
                         <a href="#" role="button" id="delete-button" class="btn btn-danger">Delete</a>

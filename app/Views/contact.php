@@ -13,6 +13,11 @@
 
     <body class="bg-light">
         <?php echo $this->include("layout/navbar"); ?>
+        <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+                <div class="alert alert-success">
+                    <?php echo session()->getFlashdata('berhasil');?>
+                </div>
+            <?php } ?>
 
         <article class="container shadow-lg col-575 col-sm-10 col-md-8 mt-5 mb-5" style="background-color: #fff;">
             <section class="col-sm-12 col-lg-10 p-md-5 p-sm-5 p-4">
@@ -21,26 +26,26 @@
                     <p>Anda bisa menghubungi kami dengan mengisi form berikut</p>    
                 </header>
 
-                <form action="" class="form">
-                <div class="form-group" hidden>
-                        <label for="nama">Type</label>
-                        <input type="text" value="pesan_user" class="form-control form-control2">
+                <form action="<?= base_url('/contact/pesan')?>" method="post" class="form">
+                    <div class="form-group" hidden>
+                        <label for="tipe">Tipe</label>
+                        <input type="text" id="tipe" name="tipe" value="pesan_user" class="form-control form-control2">
                     </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input type="text" class="form-control form-control2">
+                        <input type="text" id="nama" name="nama" class="form-control form-control2" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control form-control2">
+                        <input type="email" id="email" name="email" class="form-control form-control2" required>
                     </div>
                     <div class="form-group">
                         <label for="notelp">No Telepon</label>
-                        <input type="text" class="form-control form-control2">
+                        <input type="text" id="notelp" name="notelp" class="form-control form-control2">
                     </div>
                     <div class="form-group">
-                        <label for="email">Message</label>
-                        <textarea name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6" required></textarea>
                     </div>                             
                     <div class="form-group">
                         <input type="submit" value="Kirim" class="btn btn-primary w-100">
