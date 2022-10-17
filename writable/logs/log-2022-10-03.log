@@ -1,0 +1,64 @@
+CRITICAL - 2022-10-03 22:05:23 --> Undefined variable: id
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-03 22:06:40 --> Too few arguments to function App\Controllers\Home::post(), 1 passed in C:\xampp\htdocs\belajar\system\CodeIgniter.php on line 824 and exactly 2 expected
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-03 22:07:39 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-03 22:54:59 --> Undefined index: id
+#0 C:\xampp\htdocs\belajar\app\Views\admin_post.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('admin_post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Admin.php(16): view('admin_post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Admin->admin()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-03 22:55:53 --> Undefined index: id
+#0 C:\xampp\htdocs\belajar\app\Views\admin_post.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('admin_post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Admin.php(16): view('admin_post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Admin->admin()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-03 22:56:12 --> Undefined index: id
+#0 C:\xampp\htdocs\belajar\app\Views\admin_post.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('admin_post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Admin.php(16): view('admin_post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Admin->admin()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-03 22:57:44 --> Undefined index: id
+#0 C:\xampp\htdocs\belajar\app\Views\admin_edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('admin_edit', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Admin.php(85): view('admin_edit', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Admin->edit('2')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -29,14 +29,14 @@ class Message extends BaseController
     public function message()
     {
         $model = new MessageModel();
-        $data['user'] = $model->findAll();
+        $data['user'] = $model->where('tipe', 'pesan_user')->findAll();
         echo view('admin_msg', $data);
     }
 
     public function detail($id)
     {
         $model = new MessageModel();
-        $data['user'] = $model->where('id', $id)->first();
+        $data['user'] = $model->where('id_comment', $id)->first();
         echo view('message_detail', $data);
     }
 

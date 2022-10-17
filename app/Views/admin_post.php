@@ -31,7 +31,7 @@
                 <tbody>
                 <?php foreach($admin as $belajar): ?>
                     <tr>
-                        <td><?= $belajar['id'] ?></td>
+                        <td><?= $belajar['id_post'] ?></td>
                         <td>
                             <strong><?= substr($belajar['judul'], 0, 10) ?> . . .</strong><br>
                             <small class="text-muted"><?= $belajar['created_at'] ?></small>
@@ -50,9 +50,9 @@
                             <?php endif ?>
                         </td>
                         <td>
-                            <a href="<?php echo base_url('cms/'.$belajar['id'].'/preview')?>" class="btn btn-sm btn-outline-secondary" target="_blank">Preview</a>
-                            <a href="<?php echo base_url('cms/'.$belajar['id'].'/edit')?>" class="btn btn-sm btn-outline-secondary">Edit</a>
-                            <a href="#" data-href="<?php echo base_url('cms/'.$belajar['id'].'/delete')?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</a>
+                            <a href="<?php echo base_url('cms/'.$belajar['id_post'].'/preview')?>" class="btn btn-sm btn-outline-secondary" target="_blank">Preview</a>
+                            <a href="<?php echo base_url('cms/'.$belajar['id_post'].'/edit')?>" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            <a href="#" data-href="<?php echo base_url('cms/'.$belajar['id_post'].'/delete')?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach ?>

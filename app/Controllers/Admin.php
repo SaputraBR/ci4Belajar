@@ -19,7 +19,7 @@ class Admin extends BaseController
     public function preview($id)
     {
         $admin = new AdminModel();
-        $data['belajar'] = $admin->where('id', $id)->first();
+        $data['belajar'] = $admin->where('id_post', $id)->first();
 
         if(!$data['belajar']){
             throw PageNotFoundException::forPageNotFound();
@@ -55,11 +55,11 @@ class Admin extends BaseController
     public function edit($id)
     {
         $admin = new AdminModel();
-        $data['belajar'] = $admin->where('id', $id)->first();
+        $data['belajar'] = $admin->where('id_post', $id)->first();
         $validation = \Config\Services::validation();
         $validation->setRules(['gambar' => 'uploaded[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/gif,image/png]|max_size[gambar,6096]']);
         $validation->setRules([
-            'id' => 'required',
+            'id_post' => 'required',
             'judul' => 'required'
         ]);
         $errors = $validation->getErrors();

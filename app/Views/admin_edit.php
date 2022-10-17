@@ -14,7 +14,7 @@
 
         <div class="container mt-5">
             <form action="" method="post" enctype="multipart/form-data" id="text-editor">
-                <input type="hidden" name="id" value="<?= $belajar['id'] ?>" />
+                <input type="hidden" name="id" value="<?= $belajar['id_post'] ?>" />
                 <div class="form-group">
                     <label for="judul">Title</label>
                     <input type="text" name="judul" class="form-control" placeholder="Judul konten" value="<?= $belajar['judul'] ?>" required>

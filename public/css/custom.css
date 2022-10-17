@@ -179,6 +179,7 @@
     border-radius: 50%;
 }
 
+.dark-mode #comment_wrapper,
 .dark-mode #komentar,
 .dark-mode .bg-footer,
 .dark-mode .bg-sky,

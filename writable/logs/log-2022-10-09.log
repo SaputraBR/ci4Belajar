@@ -1,0 +1,52 @@
+CRITICAL - 2022-10-09 21:43:36 --> Call to undefined function App\Controllers\post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-09 21:44:24 --> Call to undefined function App\Controllers\Home\post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-09 21:45:56 --> Undefined class constant 'post'
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-09 21:46:20 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-09 22:02:17 --> Undefined offset: 0
+#0 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 1091, Array)
+#1 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(971): CodeIgniter\Router\RouteCollection->fillRouteParams('post/(.*)', Array)
+#2 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(53): CodeIgniter\Router\RouteCollection->reverseRoute('posting_post')
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\HTTP\RedirectResponse->route('posting_post')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-09 22:58:13 --> Undefined variable: belajar
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-09 23:01:04 --> Call to undefined function App\Controllers\komentar()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

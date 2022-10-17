@@ -23,7 +23,7 @@
                 </thead>
                 <?php foreach($user as $d) : ?>
                 <tbody>
-                    <td><?= $d['id'] ?></td>
+                    <td><?= $d['id_comment'] ?></td>
                     <td>
                         <b><?= $d['nama'] ?></b><br>
                         <small><?= $d['email'] ?></small>
@@ -31,8 +31,8 @@
                     <td><?= substr($d['message'], 0, 30) ?></td>
                     <td><?= $d['dibuat'] ?></td>
                     <td>
-                    <a href="<?= base_url('/cms/'.$d['id'].'/detail')?>"><button class="btn btn-sm btn-outline-secondary">Detail</button></a>
-                    <button href="#" data-href="<?= base_url('cms/'.$d['id'].'/hapus')?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</button>
+                    <a href="<?= base_url('/cms/'.$d['id_comment'].'/detail')?>"><button class="btn btn-sm btn-outline-secondary">Detail</button></a>
+                    <button href="#" data-href="<?= base_url('cms/'.$d['id_comment'].'/hapus')?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</button>
                     </td>
                 </tbody>
                 <?php endforeach; ?>

@@ -40,7 +40,7 @@
                         <div class="card-body p-sm-2 p-md-4">
                             <div class="p-4 p-sm-4 p-md-5">
                                 <header class="d-inline-flex text-center mb-4">
-                                    <small class="mr-2"><?= $belajar['author'] ?> · <?= substr($belajar['created_at'], 0, 10) ?></small>
+                                    <small class="mr-2"><?= $belajar['author'] ?> · <?= date("d M o", strtotime($belajar['created_at'])); ?></small>
                                 </header>
                                 <h1 class="h1 font-weight-bold mb-3"><?= $belajar['judul'] ?></h1>
                                 <div class="d-inline-flex mb-4">
@@ -62,64 +62,50 @@
                         </div>
                     </article>
 
-                    <section class="card rounded-lg shadow mt-5" id="komentar">
-                        <div class="card-body">
+                 <section class="card rounded-lg shadow mt-5 mb-1" id="comment_wrapper">
+                        <div class="card-body" id="comment_form_wrapper">
+                            <div id="comment_resp"></div>
                             <div class="mb-4">
                                 <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
                                 <small>Berikan pendapat atau masukan anda untuk artikel ini</small>    
                             </div>
-                            <form action="" class="form">
+                            <a href="javascript:void(0)" class="float-right" id="cancel-comment-reply-link"><p>cancel</p></a>
+                            <form action="" method="post" class="form" id="comment_form" name="comment_form">
                                 <div class="form-group" hidden>
                                     <label for="tipe">Tipe</label>
                                     <input type="text" id="tipe" name="tipe" value="komentar" class="form-control form-control2">
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" id="nama" name="nama" class="form-control form-control2">
+                                    <input type="text" id="nama" name="nama" class="form-control form-control2" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control form-control2">
+                                    <input type="email" id="email" name="email" class="form-control form-control2" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
-                                </div>                             
+                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6" required></textarea>
+                                </div>
+                                <div class="form-group" hidden>
+                                    <input type='hidden' name='id_post' value="<?= $belajar['id_post'] ?>" id='id_post'/>                             
+                                    <input type='hidden' name='id_main' value="" id='id_main'/>
+                                    <input type="hidden" name="depth_level" id="depth_level" value=""/>
+                                </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Kirim" class="btn btn-primary w-100">
+                                    <input type="submit" value="komentar" id="comment_submit" name="comment_submit" class="btn btn-primary w-100">
                                 </div>
                             </form>
                         </div>
                     </section>
 
                     <section class="container rounded-lg shadow p-4 mt-3 mb-5 bg-white" id="komentar">
-                        <div class="col-lg-12 pt-2 bg-komentar">
-                            <p class="border-bottom">Osama Bin Laden(<small><i>Laden69@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
-                            <p class="ml-2">Asssalamualaikum</p>
-                            <p class="ml-2 pb-2">Balas</p>
-                        </div>
-
-                        <div class="pt-2 bg-komentar" style="margin-left: 50px; padding-right: 15px; padding-left: 15px;">
-                            <p class="border-bottom">Saddam Husein(<small><i>sadHusein47@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
-                            <p class="ml-2">Waalaikumsalam ya akhi, Kayfa Haluk?</p>
-                            <p class="ml-2 pb-2">Balas</p>
-                        </div>
-
-                        <div class="pt-2 bg-komentar" style="margin-left: 100px; padding-right: 15px; padding-left: 15px;">
-                            <p class="border-bottom">Barack Obama(<small><i>AlobamaHoHo@gmail.com</i></small>) <small class="float-right">2022-09-22</small></p>
-                            <p class="ml-2">I think he is fine</p>
-                            <p class="ml-2 pb-2">Balas</p>
-                        </div>
-
-                        <div class="col-lg-12 pt-2 bg-komentar">      
-                            <p class="border-bottom">Muammar Gaddafi(<small><i>LoveLiby4ever@yahoo.co.id</i></small>) <small class="float-right">2022-09-23</small></p>
-                            <p class="ml-2">Yaa Salaam..</p>
-                            <p class="ml-2 pb-2">Balas</p>
-                        </div>
+                        <?= $komen ?>
                     </section>
+
                 </div>
                 
-                <aside class="col-sm-12 col-lg-4 mb-5">
+                <aside class="col-sm-12 col-lg-4 mb-5 ">
                     <div class="card rounded-lg shadow">
                         <div class="card-body">
                             <h5 class="h5">Billboard</h5>
@@ -169,5 +155,9 @@
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="/js/custom.js"></script>
+        <script type="text/javascript" src="/js/comment_post.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js" integrity="sha512-QSb5le+VXUEVEQbfljCv8vPnfSbVoBF/iE+c6MqDDqvmzqnr4KL04qdQMCm0fJvC3gCWMpoYhmvKBFqm1Z4c9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
 
 </html>

@@ -1,0 +1,381 @@
+CRITICAL - 2022-10-06 01:54:20 --> Illegal string offset 'nama'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 01:59:54 --> Illegal string offset 'email'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 02:00:48 --> Illegal string offset 'nama'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 02:00:49 --> Illegal string offset 'nama'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 02:01:25 --> Illegal string offset 'nama'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 02:01:26 --> Illegal string offset 'nama'
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(35): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-06 02:02:08 --> Column 'id_main' cannot be null
+CRITICAL - 2022-10-06 02:02:08 --> Column 'id_main' cannot be null
+#0 C:\xampp\htdocs\belajar\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\belajar\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\belajar\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\belajar\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\belajar\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('perjuangan-dan-...')
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-06 02:04:29 --> Column 'id_main' cannot be null
+CRITICAL - 2022-10-06 02:04:29 --> Column 'id_main' cannot be null
+#0 C:\xampp\htdocs\belajar\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\belajar\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\belajar\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\belajar\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\belajar\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('perjuangan-dan-...')
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 02:21:39 --> Undefined variable: belajar
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 02:22:31 --> Undefined index: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 02:27:08 --> Undefined variable: belajar
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 02:34:11 --> Undefined variable: home
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 02:34:24 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 02:34:43 --> Too few arguments to function App\Controllers\Home::komentar(), 0 passed in C:\xampp\htdocs\belajar\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 02:35:22 --> Too few arguments to function App\Controllers\Home::komentar(), 0 passed in C:\xampp\htdocs\belajar\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 03:18:35 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 03:20:08 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 03:22:16 --> Argument 2 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type int or null, string given, called in C:\xampp\htdocs\belajar\app\Controllers\Home.php on line 82
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\HTTP\RedirectResponse->to('/post/(:any)', 'Home::post/$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 03:26:53 --> Call to undefined function App\Controllers\post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 03:31:02 --> Undefined property: App\Controllers\Home::$session
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 03:31:22 --> Call to undefined method App\Controllers\Home::set_userdata()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 03:32:29 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\belajar\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): redirect('http://belajar....')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-06 03:49:24 --> Call to undefined method App\Controllers\Home::where()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 03:49:47 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-06 03:50:31 --> Operand should contain 1 column(s)
+CRITICAL - 2022-10-06 03:50:31 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\belajar\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\belajar\app\Controllers\Home.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): App\Controllers\Home->post(Array)
+#8 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#9 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 03:51:24 --> Use of undefined constant slug - assumed 'slug' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 03:53:01 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 324, Array)
+#1 C:\xampp\htdocs\belajar\system\Database\Query.php(324): implode(',', Array)
+#2 C:\xampp\htdocs\belajar\system\Database\Query.php(304): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\belajar\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\belajar\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\belajar\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\belajar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#8 C:\xampp\htdocs\belajar\app\Controllers\Home.php(29): CodeIgniter\BaseModel->first()
+#9 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): App\Controllers\Home->post(Array)
+#10 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#11 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-06 21:20:46 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 324, Array)
+#1 C:\xampp\htdocs\belajar\system\Database\Query.php(324): implode(',', Array)
+#2 C:\xampp\htdocs\belajar\system\Database\Query.php(304): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\xampp\htdocs\belajar\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\belajar\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\belajar\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\xampp\htdocs\belajar\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\xampp\htdocs\belajar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#8 C:\xampp\htdocs\belajar\app\Controllers\Home.php(29): CodeIgniter\BaseModel->first()
+#9 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): App\Controllers\Home->post(Array)
+#10 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('')
+#11 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-06 22:25:15 --> Argument 3 passed to CodeIgniter\Router\RouteCollection::add() must be of the type array or null, object given, called in C:\xampp\htdocs\belajar\app\Config\Routes.php on line 38
+#0 C:\xampp\htdocs\belajar\app\Config\Routes.php(38): CodeIgniter\Router\RouteCollection->add('/post/komentar', 'Home::komentar', Object(Closure))
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(705): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:27:40 --> Undefined offset: 0
+#0 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 1091, Array)
+#1 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(971): CodeIgniter\Router\RouteCollection->fillRouteParams('post/(.*)', Array)
+#2 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(53): CodeIgniter\Router\RouteCollection->reverseRoute('posting')
+#3 C:\xampp\htdocs\belajar\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route('posting')
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): redirect('posting')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 22:40:17 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:42:05 --> syntax error, unexpected 'id_main' (T_STRING), expecting ')'
+#0 C:\xampp\htdocs\belajar\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\belajar\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-06 22:42:48 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:44:31 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:45:08 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:45:18 --> Cannot use object of type App\Models\AdminModel as array
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 22:45:53 --> Undefined variable: adm
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 22:46:26 --> Undefined index: adm, slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 84, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 23:00:07 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in C:\xampp\htdocs\belajar\app\Controllers\Home.php on line 82 and at least 1 expected
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\HTTP\RedirectResponse->to()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 23:00:19 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::table()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 23:00:50 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 23:01:15 --> Call to undefined function App\Controllers\post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-06 23:02:06 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 23:04:20 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type string, null given, called in C:\xampp\htdocs\belajar\app\Controllers\Home.php on line 82
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-06 23:04:42 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in C:\xampp\htdocs\belajar\app\Controllers\Home.php on line 82 and at least 1 expected
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(82): CodeIgniter\HTTP\RedirectResponse->to()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->komentar('$1')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
