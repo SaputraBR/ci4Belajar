@@ -17,7 +17,7 @@ class Home extends BaseController
         $data['pager']   = $home->pager;
         $data['page']    = $this->request->getPost('page') ? $this->request->getPost('page') : 1;
 
-        echo view('index', $data);
+        echo view('home', $data);
     }
 
     public function post($slug)
@@ -59,11 +59,11 @@ class Home extends BaseController
 			
             if ($resp != NULL) {
                 foreach ($resp as $row) {
-                    $date = mysql_to_php_date($row->dibuat);
-                    echo "<li class='col-12 col-lg-12 col-md-12 col-sm-12 pb-2 pt-2 mb-3 ml-auto bg-komentar' id='li_comment_{$row->id_comment}>".
-                    "<p class='border-bottom'>{$row->nama}(<small><i>{$row->email}</i></small>) <small class='float-right'>{$date}}</small></p>".
-                    "<p class='ml-2'>{$row->message}</p>".
-                    "<a href='#' class='ml-2 balas' id='{$row->id_comment}'><button class='btn btn-primary'>Balas</button></a>".
+                    $date = php_date($row->dibuat);
+                    echo "<li class='mt-1 mb-1 ml-auto' id='li_comment_{$row->id_comment}'>".
+                    "<div class='border-bottom'>{$row->nama}(<small><i>{$row->email}</i></small>) <small class='float-right'>{$date}</small></div>".
+                    "<div class='ml-2'>{$row->message}</div>".
+                    "<a href='#' class='balas' id='{$row->id_comment}'><button class='btn btn-primary ml-2 mt-1'>Balas</button></a>".
                     "</li>";
                 }
             } else {
@@ -72,6 +72,8 @@ class Home extends BaseController
         } else {
             echo 'Error: Please enter your comment';
         }
+        $pn = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+        return redirect($pn, 'refresh');
     }
 
 

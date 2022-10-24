@@ -19,39 +19,36 @@ $(function () {
         $(this).hide();
     });
 
-    $("#comment_form").bind("submit", function (event) {
+    $("#comment_form").bind("submit", function(event) {
         event.preventDefault();
+
         if ($("#message").val() == "") {
             alert("Please enter your comment");
             return false;
-        }
+        };
+
         $.ajax({
             type: "POST",
-            url: "<?php echo base_url(); ?>/Home/comment_add",
+            url: "http://belajar.local/komen",
             data: $('#comment_form').serialize(),
             dataType: "html",
             success: function (comment) {
                 var reply_id = $("#id_main").val();
                 if (reply_id == "") {
-                    $("#comment_wrapper ul:first").prepend(comment);
-                    if (comment.toLowerCase().indexOf("error") >= 0) {
-                        $("#comment_resp_err").attr("value", comment);
-                    }
+                    $("#komentar ul:first").prepend(comment);
                 }
                 else {
                     if ($("#li_comment_" + reply_id).find('ul').length > 0) {
-                        $("#li_comment_" + reply_id + " ul:first").prepend(comment);
+                        $("#li_comment_" + reply_id + "ul:first").prepend(comment);
                     }
                     else {
-                        $("#li_comment_" + reply_id).append('<ul class="row-cols" style="list-style-type: none">' + comment + '</ul>');
+                        $("#li_comment_" + reply_id).append('<ul class="row-cols">' + comment + '</ul');
                     }
                 }
                 $("#message").attr("value", "");
-                $("#Id_main").attr("value", "");
+                $("#id_main").attr("value", "");
                 $("#cancel-comment-reply-link").hide();
-                $("#comment_wrapper").prepend($("#comment_form_wrapper"));
-                $('#comment_wrapper').unblock();
             }
         });
-    });
+    })
 });

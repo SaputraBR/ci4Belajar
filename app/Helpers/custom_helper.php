@@ -19,5 +19,14 @@
             return $format;
         }
     }
+
+    if (!function_exists('substrack'))
+    {
+        function substrack($format)
+        {
+            $format = substr("", 0, 15);
+            return $format;
+        }
+    }
     
 ?>

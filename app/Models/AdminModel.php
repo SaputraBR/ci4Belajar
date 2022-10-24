@@ -13,5 +13,4 @@ class AdminModel extends Model
     protected $allowedFields = ['judul', 'content', 'author', 'status', 'gambar', 'kategori', 'slug'];
 }
 
-
 ?>

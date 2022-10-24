@@ -1,8 +1,8 @@
-        <aside class="sidenav d-sm-flex d-lg-none" id="sideNav" onclick="">
+        <aside class="sidenav d-sm-flex d-lg-none" id="sideNav">
             <div class="sidenav2" id="sideNav2">
                 <header class="border-bottom d-flex p-3">
                         <h5 class="font-weight-bold">MENU</h5>
-                        <a href="javascript:void()" class="ml-auto order-1" style="color: black;" role="button" id="close" onclick="closeNav()">
+                        <a href="javascript:void(0)" class="ml-auto order-1" style="color: black;" role="button" id="close" onclick="closeNav()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
                             </svg>                
@@ -49,6 +49,7 @@
                     <p class="mt-3"><small>Copyright &copy; 2022 BELAJAR.COM</small></p>            
                 </footer>
             </div>
+            <div style="width: 35%;; background-color: transparent;" onclick="closeNav()"></div>
         </aside>
 
         <nav class="navbar navbar-expand-lg bg-white sticky-top shadow">

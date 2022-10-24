@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <link rel="icon" href="/img/fullBackground-icon.png">
         <title>Belajar</title>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
     </head>
 
     <body class="bg-light">
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6" required></textarea>
+                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
                                 </div>
                                 <div class="form-group" hidden>
                                     <input type='hidden' name='id_post' value="<?= $belajar['id_post'] ?>" id='id_post'/>                             
@@ -99,10 +99,47 @@
                         </div>
                     </section>
 
-                    <section class="container rounded-lg shadow p-4 mt-3 mb-5 bg-white" id="komentar">
+                    <section class="container rounded-lg shadow p-5 mt-3 mb-5 bg-white" id="komentar">
                         <?= $komen ?>
                     </section>
 
+                   <!--<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form">
+                                        <label data-error="wrong" data-success="right" for="form34">Nama</label>
+                                        <input type="text" id="form34" class="form-control validate">
+                                    </div>
+
+                                    <div class="md-form">
+                                        <label data-error="wrong" data-success="right" for="form29">Email</label>
+                                        <input type="email" id="form29" class="form-control validate">
+                                    </div>
+
+                                    <div class="md-form">
+                                        <label data-error="wrong" data-success="right" for="form8">Message</label>
+                                        <textarea type="text" id="message" name="message" class="md-textarea form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Launch
+                        Modal Contact Form</a>
+                    </div>-->
                 </div>
                 
                 <aside class="col-sm-12 col-lg-4 mb-5 ">
@@ -156,7 +193,7 @@
         <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="/js/custom.js"></script>
         <script type="text/javascript" src="/js/comment_post.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js" integrity="sha512-QSb5le+VXUEVEQbfljCv8vPnfSbVoBF/iE+c6MqDDqvmzqnr4KL04qdQMCm0fJvC3gCWMpoYhmvKBFqm1Z4c9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/js/jquery-blockUI.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
 

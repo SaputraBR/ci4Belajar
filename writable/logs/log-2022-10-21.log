@@ -1,0 +1,139 @@
+CRITICAL - 2022-10-21 01:28:49 --> Undefined variable: slug
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-21 01:29:33 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-21 01:30:09 --> Call to undefined function App\Controllers\post()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-21 01:32:48 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\belajar\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Home.php(75): redirect('/Home/post($slu...')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-21 01:33:00 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\belajar\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Home.php(75): redirect('Home/post($slug...')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-21 01:33:11 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\belajar\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Home.php(75): redirect('Home/post($slug...')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-21 01:33:41 --> Use of undefined constant Home - assumed 'Home' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-21 01:52:43 --> Undefined offset: 0
+#0 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 1091, Array)
+#1 C:\xampp\htdocs\belajar\system\Router\RouteCollection.php(971): CodeIgniter\Router\RouteCollection->fillRouteParams('post/(.*)', Array)
+#2 C:\xampp\htdocs\belajar\system\HTTP\RedirectResponse.php(53): CodeIgniter\Router\RouteCollection->reverseRoute('posting')
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(76): CodeIgniter\HTTP\RedirectResponse->route('posting')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->comment_add()
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-21 02:14:06 --> Undefined variable: belajar
+#0 C:\xampp\htdocs\belajar\app\Views\post.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\belajar\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#4 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-21 02:14:38 --> Call to undefined method App\Models\MessageModel::index
+#0 C:\xampp\htdocs\belajar\app\Controllers\Home.php(32): CodeIgniter\Model->__call('index', Array)
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-21 02:14:49 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\belajar\app\Models\MessageModel.php(19): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\belajar\app\Controllers\Home.php(32): App\Models\MessageModel->blog('perjuangan-dan-...')
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-21 02:15:24 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\belajar\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-21 02:27:29 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\belajar\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-21 02:27:31 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\belajar\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-21 02:27:33 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\belajar\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('perjuangan-dan-...')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-21 02:27:37 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\belajar\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\belajar\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\belajar\system\Common.php(1097): CodeIgniter\View\View->render('post', Array, true)
+#3 C:\xampp\htdocs\belajar\app\Controllers\Home.php(37): view('post', Array)
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Home->post('lorem-ipsum')
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

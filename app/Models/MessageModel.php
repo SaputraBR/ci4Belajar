@@ -42,7 +42,7 @@ class MessageModel extends Model
                 return $comments;
             }
 
-            return '<ul class="row-cols" style="list-style-type: none"></ul>';
+            return '<main class="row-cols" style="list-style-type: none" id="komen_main"></main>';
         }
 
         function comment_add($data)
@@ -75,7 +75,7 @@ class MessageModel extends Model
             $parent_stack = array();
 
 
-            $html[] = '<ul class="row-cols" style="list-style-type: none">';
+            $html[] = '<ul class="row-cols" style="list-style-type: none; padding-left: 0" id="komen_main">';
 
 
             while ($loop && ( ( $option = an_each($children[$parent]) ) || ( $parent > $default_id ) ))
@@ -90,20 +90,21 @@ class MessageModel extends Model
                     $tab = str_repeat("\t", ( count($parent_stack) + 1 ) * 2 - 1);
 
                     $html[] = sprintf(
-                            '%1$s<li class="col-12 col-lg-12 col-md-12 col-sm-12 pb-2 pt-2 mb-3 ml-auto bg-komentar border-bottom" id="li_comment_%2$s>'.
-                            '%1$s%1$s<p class="border-bottom">%3$s(<small class="border-bottom"><i>%4$s</i></small>) <small class="float-right border-bottom">%5$s</small></p>'.
-                            '%1$s%1$s<p class="ml-2">%6$s</p>'.
-                            '%1$s%1$s<a href="#" class="ml-2 balas" id="%2$s"><button class="btn btn-primary">Balas</button></a>', $tab, // %1$s = tabulation
+                            '%1$s<li class="mt-1 mb-1 ml-auto" id="li_comment_%2$s">'.
+                            '%1$s%1$s<div class="border-bottom">%3$s(<small><i>%4$s</i></small>) <small class="float-right">%5$s</small></div>'.
+                            '%1$s%1$s<div class="ml-2">%6$s</div>'.
+                            '%1$s%1$s<a href="#" class="balas" id="%2$s"><button class="btn btn-primary ml-2 mt-1">Balas</button></a>',
+                            $tab, // %1$s = tabulation
                             $option['value']->id_comment, //%2$s = id comment
                             $option['value']->nama, // %3$s = username
-                            $option['value']->email, //%4$s = email
+                            substr($option['value']->email, 0, 27), //%4$s = email
                             php_date($option['value']->dibuat), // %5$s = comment created_date
                             $option['value']->message // %6$s = comment
                     );
 
 
                     //$check_status = "";
-                    $html[] = $tab . '\t' . '<ul class="row-cols" style="list-style-type: none">';
+                    $html[] = $tab . "\t" . '<ul class="row-cols" style="list-style-type: none;">';
 
                     array_push($parent_stack, $option['value']->id_main);
                     $parent = $option['value']->id_comment;
@@ -111,10 +112,11 @@ class MessageModel extends Model
                 } else {
                     // HTML for comment item with no children (aka "leaf")
                     $html[] = sprintf(
-                        '%1$s<li class="col-12 col-lg-12 col-md-12 col-sm-12 pb-2 pt-2 mb-3 ml-auto bg-komentar" id="li_comment_%2$s">'.
-                        '%1$s%1$s<p class="border-bottom">%3$s(<small><i>%4$s</i></small>) <small class="float-right">%5$s</small></p>'.
-                        '%1$s%1$s<p class="ml-2">%6$s</p>'.
-                        '%1$s%1$s<a href="#" class="ml-2 balas" id="%2$s"><button class="btn btn-primary">Balas</button></a>'.
+                        //'%1$s<ul class="row-cols" style="list-style-type: none">'.
+                        '%1$s<li class="mt-1 mb-1 ml-auto" id="li_comment_%2$s">'.
+                        '%1$s%1$s<div class="border-bottom">%3$s(<small><i>%4$s</i></small>) <small class="float-right">%5$s</small></div>'.
+                        '%1$s%1$s<div class="ml-2">%6$s</div>'.
+                        '%1$s%1$s<a href="#" class="balas" id="%2$s"><button class="btn btn-primary ml-2 mt-1">Balas</button></a>'.
                         '%1$s</li>', str_repeat("\t", ( count($parent_stack) + 1 ) * 2 - 1), // %1$s = tabulation
                         $option['value']->id_comment, //%2$s = id comment
                         $option['value']->nama, // %3$s = username
