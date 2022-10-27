@@ -31,7 +31,6 @@
                                         <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
                                     </svg>
                                 </a>
-                                </a>
                             </nav>
                         </div>
                     </div>
@@ -62,84 +61,48 @@
                         </div>
                     </article>
 
-                 <section class="card rounded-lg shadow mt-5 mb-1" id="comment_wrapper">
-                        <div class="card-body" id="comment_form_wrapper">
-                            <div id="comment_resp"></div>
-                            <div class="mb-4">
-                                <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
-                                <small>Berikan pendapat atau masukan anda untuk artikel ini</small>    
+                    <div id="comment_section">
+                        <section class="card rounded-lg shadow mt-5 mb-1" id="comment_wrapper">
+                            <div class="card-body" id="comment_form_wrapper">
+                                <div id="comment_resp"></div>
+                                <div class="mb-4">
+                                    <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
+                                    <small>Berikan pendapat atau masukan anda untuk artikel ini</small>    
+                                </div>
+                                <form action="" method="post" class="form embuh mt-2" id="comment_form" name="comment_form">
+                                    <a href="javascript:void(0);" id="cancel-comment-reply-link" style="float: right"><b>Cancel</b></a>
+                                    <div class="form-group" hidden>
+                                        <label for="tipe">Tipe</label>
+                                        <input type="text" id="tipe" name="tipe" value="komentar" class="form-control form-control2 embuh">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Nama</label>
+                                        <input type="text" id="nama" name="nama" class="form-control form-control2 embuh" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control form-control2 embuh" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea type="text" id="message" name="message" class="form-control form-control2 embuh" cols="30" rows="6"></textarea>
+                                    </div>
+                                    <div class="form-group" hidden>
+                                        <input type='hidden' name='id_post' value="<?= $belajar['id_post'] ?>" id='id_post'/>                             
+                                        <input type='hidden' name='id_main' value="" id='id_main'/>
+                                        <input type="hidden" name="depth_level" id="depth_level" value=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="komentar" id="comment_submit" name="comment_submit" class="btn btn-primary w-100">
+                                    </div>
+                                </form>
                             </div>
-                            <a href="javascript:void(0)" class="float-right" id="cancel-comment-reply-link"><p>cancel</p></a>
-                            <form action="" method="post" class="form" id="comment_form" name="comment_form">
-                                <div class="form-group" hidden>
-                                    <label for="tipe">Tipe</label>
-                                    <input type="text" id="tipe" name="tipe" value="komentar" class="form-control form-control2">
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama">Nama</label>
-                                    <input type="text" id="nama" name="nama" class="form-control form-control2" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control form-control2" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea type="text" id="message" name="message" class="form-control form-control2" id="" cols="30" rows="6"></textarea>
-                                </div>
-                                <div class="form-group" hidden>
-                                    <input type='hidden' name='id_post' value="<?= $belajar['id_post'] ?>" id='id_post'/>                             
-                                    <input type='hidden' name='id_main' value="" id='id_main'/>
-                                    <input type="hidden" name="depth_level" id="depth_level" value=""/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" value="komentar" id="comment_submit" name="comment_submit" class="btn btn-primary w-100">
-                                </div>
-                            </form>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="container rounded-lg shadow p-5 mt-3 mb-5 bg-white" id="komentar">
-                        <?= $komen ?>
-                    </section>
-
-                   <!--<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header text-center">
-                                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body mx-3">
-                                    <div class="md-form">
-                                        <label data-error="wrong" data-success="right" for="form34">Nama</label>
-                                        <input type="text" id="form34" class="form-control validate">
-                                    </div>
-
-                                    <div class="md-form">
-                                        <label data-error="wrong" data-success="right" for="form29">Email</label>
-                                        <input type="email" id="form29" class="form-control validate">
-                                    </div>
-
-                                    <div class="md-form">
-                                        <label data-error="wrong" data-success="right" for="form8">Message</label>
-                                        <textarea type="text" id="message" name="message" class="md-textarea form-control" rows="4"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer d-flex justify-content-center">
-                                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
-                                </div>
-                            </div>
-                        </div>
+                        <section class="container rounded-lg shadow p-5 mt-3 mb-5 bg-white" id="komentar">
+                            <?= $user ?>
+                        </section>
                     </div>
-
-                    <div class="text-center">
-                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Launch
-                        Modal Contact Form</a>
-                    </div>-->
                 </div>
                 
                 <aside class="col-sm-12 col-lg-4 mb-5 ">
@@ -185,6 +148,12 @@
             </div>
         </div>
 
+        <div id="overlay">
+            <div class="cv-spinner">
+                <span class="spinner"></span>
+            </div>
+        </div>
+
         <?= $this->include('layout/footer') ?>
 
     </body>
@@ -194,7 +163,6 @@
         <script type="text/javascript" src="/js/custom.js"></script>
         <script type="text/javascript" src="/js/comment_post.js"></script>
         <script src="/js/jquery-blockUI.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+
 
 </html>

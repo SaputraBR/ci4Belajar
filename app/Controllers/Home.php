@@ -29,7 +29,7 @@ class Home extends BaseController
         ])->first();
 
         $user = new MessageModel();
-        $data['komen'] = $user->comment_post($slug);
+        $data['user'] = $user->comment_post($slug);
 
         echo view('post', $data);
     }
@@ -70,10 +70,8 @@ class Home extends BaseController
                 echo 'Error in adding comment';
             }
         } else {
-            echo 'Error: Please enter your comment';
+            echo 'Error in adding comment';
         }
-        $pn = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
-        return redirect($pn, 'refresh');
     }
 
 

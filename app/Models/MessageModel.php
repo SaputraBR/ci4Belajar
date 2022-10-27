@@ -42,7 +42,7 @@ class MessageModel extends Model
                 return $comments;
             }
 
-            return '<main class="row-cols" style="list-style-type: none" id="komen_main"></main>';
+            return '<ul class="row-cols" style="list-style-type: none" id="komen_main"></ul>';
         }
 
         function comment_add($data)
@@ -124,6 +124,7 @@ class MessageModel extends Model
                         php_date($option['value']->dibuat), // %5$s = comment created_date
                         $option['value']->message // %6$s = comment
                         );
+                        
 
                     }
             }

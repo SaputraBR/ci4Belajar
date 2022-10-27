@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+use App\Models\MessageModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Admin extends BaseController
@@ -21,7 +22,10 @@ class Admin extends BaseController
         $admin = new AdminModel();
         $data['belajar'] = $admin->where('id_post', $id)->first();
 
-        if(!$data['belajar']){
+        $user = new MessageModel();
+        $data['user'] = $user->comment_post($id);
+
+        if(!$data){
             throw PageNotFoundException::forPageNotFound();
         }
         echo view('post', $data);

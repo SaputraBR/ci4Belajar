@@ -19,8 +19,8 @@
                 </div>
             <?php } ?>
 
-        <article class="container shadow-lg col-575 col-sm-10 col-md-8 mt-5 mb-5" style="background-color: #fff;">
-            <section class="col-sm-12 col-lg-10 p-md-5 p-sm-5 p-4">
+        <article class="container d-flex shadow-lg col-575 col-sm-10 col-md-8 mt-5 mb-5 justify-content-center" style="background-color: #fff;">
+            <section class="col-sm-12 col-lg-10 p-md-5 p-sm-5 p-4" >
                 <header class="mb-4">
                     <h2 class="h2">Hubungi Kami</h2>
                     <p>Anda bisa menghubungi kami dengan mengisi form berikut</p>    
