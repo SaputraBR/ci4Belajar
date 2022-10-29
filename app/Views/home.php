@@ -13,7 +13,7 @@
         </head>
     </head>
 
-    <body class="bg-light">
+    <body class="bg-joy">
         <?= $this->include('layout/navbar') ?>
         
         <header>

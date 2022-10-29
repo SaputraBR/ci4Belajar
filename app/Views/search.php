@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
     </head>
 
-    <body class="bg-light">
+    <body class="bg-joy">
         <?php echo $this->include("layout/navbar") ?>
 
         <article class="container shadow-lg col-575 col-sm-10 col-md-8 mt-5 mb-5" style="background-color: #fff; min-height: 60vh">

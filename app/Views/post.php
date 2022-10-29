@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
     </head>
 
-    <body class="bg-light">
+    <body class="bg-joy">
 
         <?= $this->include('layout/navbar') ?>
 
@@ -105,8 +105,8 @@
                     </div>
                 </div>
                 
-                <aside class="col-sm-12 col-lg-4 mb-5 ">
-                    <div class="card rounded-lg shadow">
+                <aside class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card rounded-lg shadow sticky-top" style="top: 5rem; z-index: -1"">
                         <div class="card-body">
                             <h5 class="h5">Billboard</h5>
                         </div>

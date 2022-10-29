@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
     </head>
 
-    <body class="bg-light">
+    <body class="bg-joy">
         <?php echo $this->include("layout/navbar"); ?>
         <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
                 <div class="alert alert-success">
