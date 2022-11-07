@@ -55,6 +55,20 @@
     color: white;
 }
 
+.balas {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: .6rem;
+    background-color: rgb(0, 123, 255) !important;
+    text-decoration: none;
+}
+
+.balas:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(0, 98, 204) !important;
+}
+
 .bg-ensi {
     background-size: cover;
     background-attachment: scroll;
@@ -191,6 +205,20 @@
 .dark-mode .card,
 .dark-mode article{
     background: #3f4c57 !important;
+}
+
+.dark-mode .balas {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: .6rem;
+    background-color: rgba(158, 158, 158, .8) !important;
+    text-decoration: none;
+}
+
+.dark-mode .balas:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(118, 118, 118, 0.6) !important;
 }
 
 .dark-mode .bg-komentar{
@@ -397,3 +425,4 @@
   .is-hide{
     display:none;
   }
+

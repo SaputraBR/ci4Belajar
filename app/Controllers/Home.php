@@ -61,9 +61,12 @@ class Home extends BaseController
                 foreach ($resp as $row) {
                     $date = php_date($row->dibuat);
                     echo "<li class='mt-1 mb-1 ml-auto' id='li_comment_{$row->id_comment}'>".
-                    "<div class='border-bottom'>{$row->nama}(<small><i>{$row->email}</i></small>) <small class='float-right'>{$date}</small></div>".
-                    "<div class='ml-2'>{$row->message}</div>".
-                    "<a href='#' class='balas' id='{$row->id_comment}'><button class='btn btn-primary ml-2 mt-1'>Balas</button></a>".
+                    "<div class='border-bottom'>
+                    <div>{$row->nama} · <small>{$date}</small></div>
+                    <small><i>{$row->email}</i></small>
+                    </div>".
+                    "<div class='ml-2 mb-2'>{$row->message}</div>".
+                    "<a href='#' class='balas' id='{$row->id_comment}'>Balas</a>".
                     "</li>";
                 }
             } else {

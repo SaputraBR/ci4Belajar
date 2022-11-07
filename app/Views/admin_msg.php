@@ -7,6 +7,11 @@
     </head>
 
     <?php echo $this->include('layout/admin/admin_navbar'); ?>
+            <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+                <div class="alert alert-success">
+                    <?php echo session()->getFlashdata('berhasil');?>
+                </div>
+            <?php } ?>
 
     <body>
         <section class="container">

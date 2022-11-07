@@ -43,9 +43,9 @@ class Message extends BaseController
     public function hapus($id)
     {
         $model = new MessageModel();
-        $data['user'] = $model->find($id);
-        $model->delete($id);
+        $data['user'] = $model->where('id_comment', $id);
+        $data['user']->delete();
 
-        return redirect()->to('cms/message');
+        return redirect()->to('cms/message')->with("berhasil","Data berhasil dihapus");
     }
 }

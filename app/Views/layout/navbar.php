@@ -1,4 +1,4 @@
-        <aside class="sidenav d-sm-flex d-lg-none" id="sideNav">
+        <aside class="sidenav d-flex d-sm-flex d-lg-none" id="sideNav">
             <div class="sidenav2" id="sideNav2">
                 <header class="border-bottom d-flex p-3">
                         <h5 class="font-weight-bold">MENU</h5>

@@ -1,0 +1,9 @@
+CRITICAL - 2022-11-01 21:38:43 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Admin.php(103): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Admin->delete('2')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

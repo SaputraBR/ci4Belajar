@@ -99,6 +99,10 @@ class Admin extends BaseController
             unlink('../public/img/'.$img);
         }
         $admin->delete($id);
+
+        $message = new MessageModel();
+        $data['user'] = $message->where('id_post', $id);
+        $data['user']->delete();
         return redirect()->to('../cms')->with("berhasil","Data berhasil dihapus");
     }
 

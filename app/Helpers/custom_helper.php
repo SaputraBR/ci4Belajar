@@ -15,7 +15,7 @@
         function php_date($mysql_date)
         {
             $datetime = strtotime($mysql_date);
-            $format = date("d M o, g:i a", $datetime);
+            $format = date("d M o", $datetime);
             return $format;
         }
     }

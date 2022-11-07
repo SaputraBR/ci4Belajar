@@ -1,4 +1,9 @@
 $(function () {
+    
+    if(nama === "admin ganteng" && email === "ahmadbungsu4590@gmail.com"){
+        alert("Nama atau email sudah ada!!")
+    }
+
     $("#cancel-comment-reply-link").hide();
 	$(".balas").on('click', function(event) {
         event.preventDefault();
@@ -35,6 +40,12 @@ $(function () {
         if ($("#message").val() == "") {
             alert("Please enter your comment");
             return false;
+        } else if ($("#nama").val() == "admin ganteng", "Admin Ganteng"){
+            alert("Nama atau email sudah ada");
+            return false;
+        } else if ($("#email").val() == "ahmadbungsu4590@gmail.com"){
+            alert("Nama atau email sudah ada");
+            return false;
         };
 
         $.ajax({
@@ -67,3 +78,4 @@ $(function () {
           
     })
 });
+

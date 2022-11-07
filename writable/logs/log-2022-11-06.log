@@ -1,0 +1,198 @@
+CRITICAL - 2022-11-06 20:20:29 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:22:42 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:26:51 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:27:16 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'id_comment')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('id_comment', '56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:28:12 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:30:19 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:33:01 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:35:00 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:39:07 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:41:33 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:41:35 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:41:44 --> Array to string conversion
+#0 C:\xampp\htdocs\belajar\system\Model.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '56')
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->find('56')
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:45:31 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(46): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:46:10 --> Call to undefined function App\Controllers\delete()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-06 20:46:47 --> Call to undefined function App\Controllers\get()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-06 20:47:06 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:47:40 --> Call to undefined function App\Controllers\first()
+#0 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#1 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#2 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-06 20:47:55 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:48:12 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:48:29 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:51:36 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:51:53 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\belajar\system\Model.php on line 336
+#0 C:\xampp\htdocs\belajar\system\Model.php(336): CodeIgniter\Database\BaseBuilder->whereIn(Array, Array)
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete(Array)
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 20:52:23 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\xampp\htdocs\belajar\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\xampp\htdocs\belajar\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\xampp\htdocs\belajar\app\Controllers\Message.php(47): CodeIgniter\BaseModel->delete()
+#3 C:\xampp\htdocs\belajar\system\CodeIgniter.php(824): App\Controllers\Message->hapus('56')
+#4 C:\xampp\htdocs\belajar\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#5 C:\xampp\htdocs\belajar\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\belajar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

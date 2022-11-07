@@ -83,7 +83,7 @@ class MessageModel extends Model
                 if ($option === false) {
                     $parent = array_pop($parent_stack);
 
-                    $html[] = str_repeat("\t", ( count($parent_stack) + 1 ) * 2) . '</ul>';
+                    $html[] = str_repeat("\t", ( count($parent_stack) + 1 ) < 3) . '</ul>';
                     $html[] = str_repeat("\t", ( count($parent_stack) + 1 ) * 2 - 1) . '</li>';
 
                 } elseif (!empty($children[$option['value']->id_comment])) {
@@ -91,9 +91,13 @@ class MessageModel extends Model
 
                     $html[] = sprintf(
                             '%1$s<li class="mt-1 mb-1 ml-auto" id="li_comment_%2$s">'.
-                            '%1$s%1$s<div class="border-bottom">%3$s(<small><i>%4$s</i></small>) <small class="float-right">%5$s</small></div>'.
-                            '%1$s%1$s<div class="ml-2">%6$s</div>'.
-                            '%1$s%1$s<a href="#" class="balas" id="%2$s"><button class="btn btn-primary ml-2 mt-1">Balas</button></a>',
+                            '%1$s%1$s
+                                <div class="border-bottom">
+                                <div>%3$s · <small>%5$s</small></div>
+                                <small><i>%4$s</i></small>
+                                </div>'.
+                            '%1$s%1$s<div class="ml-2 mb-2">%6$s</div>'.
+                            '%1$s%1$s<a href="#" class="balas" id="%2$s">Balas</a>',
                             $tab, // %1$s = tabulation
                             $option['value']->id_comment, //%2$s = id comment
                             $option['value']->nama, // %3$s = username
@@ -114,9 +118,13 @@ class MessageModel extends Model
                     $html[] = sprintf(
                         //'%1$s<ul class="row-cols" style="list-style-type: none">'.
                         '%1$s<li class="mt-1 mb-1 ml-auto" id="li_comment_%2$s">'.
-                        '%1$s%1$s<div class="border-bottom">%3$s(<small><i>%4$s</i></small>) <small class="float-right">%5$s</small></div>'.
-                        '%1$s%1$s<div class="ml-2">%6$s</div>'.
-                        '%1$s%1$s<a href="#" class="balas" id="%2$s"><button class="btn btn-primary ml-2 mt-1">Balas</button></a>'.
+                        '%1$s%1$s
+                            <div class="border-bottom">
+                            <div>%3$s · <small>%5$s</small></div>
+                            <small><i>%4$s</i></small>
+                            </div>'.
+                        '%1$s%1$s<div class="ml-2 mb-2">%6$s</div>'.
+                        '%1$s%1$s<a href="#" class="balas" id="%2$s">Balas</a>'.
                         '%1$s</li>', str_repeat("\t", ( count($parent_stack) + 1 ) * 2 - 1), // %1$s = tabulation
                         $option['value']->id_comment, //%2$s = id comment
                         $option['value']->nama, // %3$s = username
