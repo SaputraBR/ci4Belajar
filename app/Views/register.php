@@ -18,13 +18,13 @@
                 <a class="navbar-brand" style="text-decoration: none;" href="<?php echo base_url('cms') ?>">Admin</a>
             </div>
         </nav>
+        <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+            <div class="alert alert-success">
+                <?php echo session()->getFlashdata('berhasil');?>
+            </div>
+        <?php } ?>
 
         <section class="container shadow-lg col-575 col-sm-8 col-md-6 mt-5 mb-5 bg-light">
-            <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
-                <div class="alert alert-success">
-                    <?php echo session()->getFlashdata('berhasil');?>
-                </div>
-            <?php } ?>
             <form method="post" enctype="multipart/form-data" class="p-md-5 p-sm-5 p-4">
                 <h3>Register Form</h3>
                 <p><small>Isikan data user yang akan didaftarkan</small></p>
