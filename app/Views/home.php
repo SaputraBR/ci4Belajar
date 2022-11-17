@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-            <link rel="icon" href="img/fullBackground-icon.png">
-            <title>Belajar</title>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css"/>
-            <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
-        </head>
-    </head>
+    <?= $this->extend('layout/page_layout') ?>
 
-    <body class="bg-joy">
-        <?= $this->include('layout/navbar') ?>
-        
+    <?= $this->section('content') ?>
         <header>
             <div class="jumbotron bg-sky">
                 <div class="container">
@@ -69,34 +54,27 @@
                 </div>
             </div>
         </div>
+        <?= $this->endSection() ?>
 
-        <?= $this->include('layout/footer') ?>
-
-        <script type="text/javascript" src="/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="/js/custom.js"></script>
-
+        <?= $this->section('script') ?>
         <script>
-        window.onscroll = function() {backTop()}
+            window.onscroll = function() {backTop()}
 
-        function backTop() {    
-            var buttonTop = document.getElementById('rollBack')
+            function backTop() {    
+                var buttonTop = document.getElementById('rollBack')
 
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            buttonTop.hidden = false;
-            } else {
-            buttonTop.hidden = true;
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                buttonTop.hidden = false;
+                } else {
+                buttonTop.hidden = true;
+                };
             };
-        };
 
-        var rollBack = document.getElementById('rollBack');
+            var rollBack = document.getElementById('rollBack');
 
-        rollBack.addEventListener('click', (e) => {
-        e.preventDefault();
-        $('html, body').animate({scrollTop:0})
-        });
-        
+            rollBack.addEventListener('click', (e) => {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0})
+            });
         </script>
-    </body>
-</html>
+        <?= $this->endSection('script') ?>

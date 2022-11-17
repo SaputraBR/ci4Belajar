@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link rel="icon" href="img/fullBackground-icon.png">
-        <title>Belajar</title>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
-    </head>
-
-    <body class="bg-joy">
-        <?php echo $this->include("layout/navbar"); ?>
+<?= $this->extend('layout/page_layout') ?>
+    <?= $this->section('content') ?>
         <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
-                <div class="alert alert-success">
-                    <?php echo session()->getFlashdata('berhasil');?>
-                </div>
-            <?php } ?>
+            <div class="alert alert-success">
+                <?php echo session()->getFlashdata('berhasil');?>
+            </div>
+        <?php } ?>
 
         <article class="container d-flex shadow-lg col-11 col-sm-11 col-md-8 mt-5 mb-5 justify-content-center" style="background-color: #fff;">
             <section class="col-sm-12 col-lg-10 p-md-5 p-sm-5 p-4" >
@@ -59,14 +46,4 @@
                 </footer>
             </section>
         </article>
-
-        
-        <?= $this->include("layout/footer") ?>
-    
-        <script type="text/javascript" src="/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="/js/custom.js"></script>
-
-    </body>
-</html>
+    <?= $this->endSection() ?>

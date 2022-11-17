@@ -1,0 +1,1 @@
+<?= view_cell('\App\Libraries\Billboard::billboard', ['limit' => 5]) ?>

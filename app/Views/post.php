@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link rel="icon" href="/img/fullBackground-icon.png">
-        <title>Belajar</title>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
-    </head>
-
-    <body class="bg-joy">
-
-        <?= $this->include('layout/navbar') ?>
-
+<?= $this->extend('layout/page_layout') ?>
+    <?= $this->section('content') ?>
         <div class="container my-4 my-sm-5 my-md-5">
             <div class="row">
                 <div class="col-sm-12 col-lg-8">
@@ -106,44 +91,7 @@
                 </div>
                 
                 <aside class="col-sm-12 col-lg-4 mb-5">
-                    <div class="card rounded-lg shadow sticky-top" style="top: 5rem; z-index: -1"">
-                        <div class="card-body">
-                            <h5 class="h5">Billboard</h5>
-                        </div>
-                        <div class="list-group list-group-flush p-0 pb-1">
-                            <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h6 class="h6 mt-0 mb-1 font-weight-bold">Obat kuat manjur untuk biawak</h6>
-                                        <small class="text-secondary align-middle">7 Jul 2013</small>
-                                    </div>
-                                    <img src="img/iconBlack.png" width="50" height="50" class="rounded-lg ml-2"/>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="list-group list-group-flush p-0 pb-1">
-                            <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h6 class="h6 mt-0 mb-1 font-weight-bold">Obat kuat manjur untuk biawak</h6>
-                                        <small class="text-secondary align-middle">7 Jul 2013</small>
-                                    </div>
-                                    <img src="img/iconBlack.png" width="50" height="50" class="rounded-lg ml-2"/>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="list-group list-group-flush p-0 pb-1">
-                            <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h6 class="h6 mt-0 mb-1 font-weight-bold">Obat kuat manjur untuk biawak</h6>
-                                        <small class="text-secondary align-middle">7 Jul 2013</small>
-                                    </div>
-                                    <img src="img/iconBlack.png" width="50" height="50" class="rounded-lg ml-2"/>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <?= $this->include('layout/billboard') ?>
                 </aside>
             </div>
         </div>
@@ -153,16 +101,9 @@
                 <span class="spinner"></span>
             </div>
         </div>
+    <?= $this->endSection('content') ?>
 
-        <?= $this->include('layout/footer') ?>
-
-    </body>
-        <script type="text/javascript" src="/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="/js/custom.js"></script>
+    <?= $this->section('script') ?>
         <script type="text/javascript" src="/js/comment_post.js"></script>
         <script src="/js/jquery-blockUI.js"></script>
-
-
-</html>
+    <?= $this->endSection('script') ?>
